@@ -2,6 +2,8 @@
 
 This is a simple todo application built with [Laravel 12](https://laravel.com), [Livewire 3](https://laravel-livewire.com), [Tailwind CSS 4](https://tailwindcss.com) and [TallCraftUI V2](https://tallcraftui.developermithu.com).
 
+![Screenshot](/public/screenshot.png)
+
 ## Installation Guide
 
 1. Clone the repository
@@ -46,4 +48,4 @@ php artisan migrate:fresh --seed
 npm install && npm run dev
 ```
 
-8. Visit the application in your browser at `http://todo-app-tallcraftui.test`
+8. Visit the application in your browser at `http://todo-app-tallcraftui.test` or `http://localhost:8000`
