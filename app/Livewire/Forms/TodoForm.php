@@ -12,7 +12,7 @@ class TodoForm extends Form
     public string $name = '';
 
     #[Validate('required|in:low,medium,high')]
-    public string $priority = 'low';
+    public ?string $priority = null;
 
     #[Validate('nullable|boolean')]
     public bool $isComplete = false;
