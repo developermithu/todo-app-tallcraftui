@@ -30,16 +30,15 @@ class TodoList extends Component
         $this->showModal = false;
     }
 
-    public function toggleTodo($id)
+    public function toggleTodo(Todo $todo)
     {
-        $todo = Todo::find($id);
         $todo->is_complete = !$todo->is_complete;
         $todo->save();
     }
 
-    public function destroy($id)
+    public function destroy(Todo $todo)
     {
-        Todo::findOrFail($id)->delete();
+        $todo->delete();
     }
 
     public function render()
