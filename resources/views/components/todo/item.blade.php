@@ -1,6 +1,7 @@
 <div
     class="group flex items-center justify-between p-4 bg-white border border-gray-100 rounded-xl hover:shadow-sm duration-200">
     <div class="flex items-center gap-4 flex-1">
+        {{-- Todo Checkbox --}}
         <button wire:click="toggleTodo({{ $todo->id }})" class="flex-shrink-0 focus:outline-none">
             @if ($todo->is_complete)
                 <div
@@ -14,6 +15,7 @@
             @endif
         </button>
 
+        {{-- Todo Content --}}
         <div class="flex-1">
             <span @class([
                 'text-lg text-gray-700 transition-colors duration-200',
@@ -36,6 +38,7 @@
         </div>
     </div>
 
+    {{-- Todo Actions --}}
     <div class="flex items-center gap-2">
         <x-button wire:click="editTodo({{ $todo->id }})" icon="pencil-square" flat circle gray />
         <x-button wire:click="destroy({{ $todo->id }})" icon="trash" flat circle red />
