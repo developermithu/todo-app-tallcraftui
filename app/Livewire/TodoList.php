@@ -10,6 +10,14 @@ class TodoList extends Component
 {
     public TodoForm $form;
 
+    public bool $showModal = false;
+
+    public function showEditModal(Todo $todo)
+    {
+        $this->form->setTodo($todo);
+        $this->showModal = true;
+    }
+
     public function addTodo()
     {
         $this->form->store();
@@ -19,6 +27,7 @@ class TodoList extends Component
     public function updateTodo()
     {
         $this->form->update();
+        $this->showModal = false;
     }
 
     public function toggleTodo($id)

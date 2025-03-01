@@ -12,4 +12,7 @@
             </div>
         </div>
     </div>
+
+    {{-- Edit Modal --}}
+    @include('livewire.edit-todo')
 </div>

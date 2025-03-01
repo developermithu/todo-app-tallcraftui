@@ -40,7 +40,7 @@
 
     {{-- Todo Actions --}}
     <div class="flex items-center gap-2">
-        <x-button wire:click="editTodo({{ $todo->id }})" icon="pencil-square" flat circle gray />
+        <x-button wire:click="showEditModal({{ $todo->id }})" icon="pencil-square" flat circle gray />
         <x-button wire:click="destroy({{ $todo->id }})" icon="trash" flat circle red />
     </div>
 </div>

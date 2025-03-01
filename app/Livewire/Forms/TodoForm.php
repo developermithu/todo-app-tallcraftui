@@ -15,7 +15,7 @@ class TodoForm extends Form
     public string $priority = 'low';
 
     #[Validate('nullable|boolean')]
-    public bool $isComplete = false;
+    public bool $is_complete = false;
 
     public ?Todo $todo;
 
@@ -25,7 +25,7 @@ class TodoForm extends Form
 
         $this->name = $todo->name;
         $this->priority = $todo->priority;
-        $this->isComplete = $todo->is_complete;
+        $this->is_complete = $todo->is_complete;
     }
 
     public function store()
@@ -35,7 +35,7 @@ class TodoForm extends Form
         Todo::create([
             'name' => $this->name,
             'priority' => $this->priority,
-            'is_complete' => $this->isComplete,
+            'is_complete' => $this->is_complete,
         ]);
 
         $this->reset();
@@ -48,7 +48,7 @@ class TodoForm extends Form
         $this->todo->update([
             'name' => $this->name,
             'priority' => $this->priority,
-            'is_complete' => $this->isComplete,
+            'is_complete' => $this->is_complete,
         ]);
 
         $this->reset();
