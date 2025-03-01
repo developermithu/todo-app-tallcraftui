@@ -7,7 +7,7 @@
         <select wire:model="form.priority"
             class="px-4 py-2.5 bg-gray-50 border border-gray-200 rounded-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition">
             @foreach (App\Enums\PriorityEnum::cases() as $priority)
-                <option value="{{ $priority }}"> {{ $priority }} </option>
+                <option value="{{ $priority->value }}">{{ $priority->label() }}</option>
             @endforeach
         </select>
 
