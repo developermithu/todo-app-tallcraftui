@@ -13,6 +13,8 @@
         </div>
     </div>
 
+    <x-footer-buttons />
+
     {{-- Edit Modal --}}
     @include('livewire.edit-todo')
 </div>

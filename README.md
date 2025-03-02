@@ -59,6 +59,7 @@ npm install && npm run dev
 - [x] Mark Todo as Completed
 - [x] Display Toast Notifications
 - [x] Modal for Editing Todo
+- [x] Progress Indicator 
 - [x] Responsive design
 - [ ] Dark mode
 - [ ] GitHub Actions for CI/CD
