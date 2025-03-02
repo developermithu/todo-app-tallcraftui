@@ -49,3 +49,21 @@ npm install && npm run dev
 ```
 
 8. Visit the application in your browser at `http://todo-app-tallcraftui.test` or `http://localhost:8000`
+
+## Project Features
+
+- [x] Todo List
+- [x] Create Todo
+- [x] Update Todo
+- [x] Delete Todo
+- [x] Mark Todo as Completed
+- [x] Display Toast Notifications
+- [x] Modal for Editing Todo
+- [x] Responsive design
+- [ ] Dark mode
+- [ ] GitHub Actions for CI/CD
+- [ ] Unit Testing
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit [pull requests](https://github.com/developermithu/todo-app-tallcraftui/pulls) or [issues](https://github.com/developermithu/todo-app-tallcraftui/issues) to improve this project.
