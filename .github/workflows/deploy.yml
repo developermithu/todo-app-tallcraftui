@@ -43,6 +43,8 @@ jobs:
           remote_user: ${{ secrets.SSH_USERNAME }}
           remote_key: ${{ secrets.SSH_PRIVATE_KEY }}
           remote_port: ${{ secrets.SSH_PORT }}
+        env:
+          RSYNC_RSH: "ssh -o StrictHostKeyChecking=no"
 
       - name: Run Remote SSH Commands
         uses: appleboy/ssh-action@v0.1.8
