@@ -55,3 +55,8 @@ jobs:
             cd ${{ secrets.SSH_PATH }}
             php artisan migrate --force
             php artisan optimize:clear
+
+      - name: Set Permissions on Directories
+        run: |
+          chmod -R 755 storage bootstrap/cache
+          chmod -R 775 storage/logs
