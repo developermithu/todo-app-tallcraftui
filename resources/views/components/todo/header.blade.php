@@ -1,6 +1,6 @@
 <div class="flex items-center justify-between mb-8">
     <h1 class="text-3xl font-bold text-primary">
-        Todo List
+        <a wire:navigate href="/">Todo List</a>
     </h1>
     <div class="text-sm text-gray-600">
         <span class="font-medium">{{ $completedCount }}/{{ $totalCount }}</span>
